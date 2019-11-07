@@ -10,3 +10,5 @@ RUN wget --no-verbose --output-document=/tmp/gradle.zip "https://services.gradle
     && sudo mv /opt/gradle-${GRADLE_VERSION} /opt/gradle \
     && sudo ln -s /opt/gradle/bin/gradle /usr/local/bin/gradle \
     && rm /tmp/gradle.zip
+
+RUN sudo npm -g i appcenter-cli
